@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "firebase deploy"
+    "deploy": "yarn deploy --token=${{1//0eRNc5EuzEogZCgYIARAAGA4SNwF-L9IrfpSseV8yVIAltJ7b4xCqeEmpkmcGhNzV_eHqyype7bR9n8qQTjPrkre7KqFyz1iDV00}}"
   },
   "eslintConfig": {
     "extends": [
