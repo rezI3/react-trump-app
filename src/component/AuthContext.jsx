@@ -4,12 +4,11 @@ import { auth } from '../firebase'
 
 const AuthContext = createContext()
 
-  export const useAuthContext = () => {
-    return useContext(AuthContext)
-  }
+export const useAuthContext = () => {
+  return useContext(AuthContext)
+}
 
-const AuthProvider = ({children}) => {
-  
+export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null)
 
   useEffect(()=>{
@@ -17,10 +16,7 @@ const AuthProvider = ({children}) => {
       setUser(user)
     })
     return () => unSubscribed();
-  }
-  ,[]
-
-  )
+  }, [])
 
   return (
     <AuthContext.Provider value={user}>

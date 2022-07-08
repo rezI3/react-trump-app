@@ -3,7 +3,7 @@ import { useRef } from "react";
 import {auth} from "../firebase"
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const SignUp = () => {
 
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
@@ -35,4 +35,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignUp;

@@ -3,7 +3,7 @@ import TrumpList from "../component/TrumpList.js";
 import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
 import { auth } from "../firebase.js";
-import {Navigate, useNavigate} from "react-router-dom"
+import {useNavigate} from "react-router-dom"
 
 // import {makeStyles, createStyles } from '@mui/material';
 // const useStyle = makeStyles(() =>
